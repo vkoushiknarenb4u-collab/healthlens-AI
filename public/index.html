@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07131c" />
+    <meta name="description" content="Understand your blood report with AI-powered analysis." />
+    <title>HealthLens AI — Blood report, made clearer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top" aria-label="HealthLens AI home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="13" fill="currentColor"/><path d="M8 20h6l3.1-7 5.4 14 3.3-7H32" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="brand-copy"><span class="brand-name">HealthLens <span>AI</span></span><small>Your health, explained</small></span>
+        </a>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a class="active" href="#top"><span aria-hidden="true">⌂</span>Home</a>
+          <a href="#upload"><span aria-hidden="true">▤</span>Analyze Report</a>
+          <a id="reports-link" href="#dashboard"><span aria-hidden="true">▧</span>Reports</a>
+          <a id="health-insights-link" href="#health-insights-preview"><span aria-hidden="true">♧</span>Health Insights</a>
+        </nav>
+        <div class="sidebar-promo"><span class="promo-crown" aria-hidden="true">♛</span><strong>Private by design</strong><p>Your health details stay in your control.</p></div>
+      </aside>
+
+      <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-actions"><span class="topbar-indicator" aria-label="Private session">◈</span><span class="avatar" aria-hidden="true">H</span><span class="profile-name">HealthLens user</span></div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-wrap" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> AI-POWERED BLOOD REPORT ANALYSIS</div>
+            <h1 id="hero-title">Understand your<br />health, <span>clearly.</span></h1>
+            <p class="hero-lede">Upload your blood test report and get simple explanations, potential health risks and personalized suggestions.</p>
+            <div class="hero-actions"><a class="hero-upload-link" href="#upload"><span aria-hidden="true">⇧</span> Upload Report</a><a class="hero-secondary-link" href="#how-it-works"><span aria-hidden="true">▤</span> See how it works</a></div>
+            <div class="hero-note"><span class="note-icon">✳</span> Helpful context to discuss with your healthcare professional.</div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <svg class="anatomy-art" viewBox="0 0 760 480" fill="none" role="presentation">
+              <defs><linearGradient id="torso" x1="384" y1="50" x2="384" y2="450" gradientUnits="userSpaceOnUse"><stop stop-color="#124364" stop-opacity=".35"/><stop offset=".55" stop-color="#087b8d" stop-opacity=".35"/><stop offset="1" stop-color="#12b789" stop-opacity=".28"/></linearGradient><radialGradient id="heartGlow"><stop stop-color="#ff617c" stop-opacity=".72"/><stop offset="1" stop-color="#f03766" stop-opacity="0"/></radialGradient></defs>
+              <path d="M317 43c-16 22-23 48-48 59-31 13-63 18-91 49-29 32-39 77-54 126-13 44-24 98-21 161h564c3-63-8-117-21-161-15-49-25-94-54-126-28-31-60-36-91-49-25-11-32-37-48-59h-136Z" fill="url(#torso)" stroke="#35bad0" stroke-opacity=".42" stroke-width="2"/>
+              <path d="M327 42c8 44 28 66 53 78 25-12 45-34 53-78M380 119v82m0 0-59 74m59-74 59 74m-118-69 59 59 59-59" stroke="#4cd8df" stroke-opacity=".52" stroke-width="3" stroke-linecap="round"/>
+              <path d="M379 190c-13-18-35-18-44 0-13 26 14 57 45 78 31-21 58-52 45-78-9-18-31-18-44 0h-2Z" fill="#ee416b" fill-opacity=".68" stroke="#ff8b96" stroke-width="3"/>
+              <circle cx="380" cy="221" r="105" fill="url(#heartGlow)"/>
+              <path d="M380 195v-55m0 55-40 48m40-48 39 48M380 140l-35-22m35 22 33-22m-108 89-41-23m41 23-31 48m198-48 41-23m-41 23 31 48m-127 15-47 58m86-58 47 58" stroke="#ee667d" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+              <path d="M344 252c-12 23-22 49-27 82m99-82c12 23 22 49 27 82m-140-146c-35 17-51 43-60 81m232-81c35 17 51 43 60 81" stroke="#43c8dc" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M380 270v152m-63-36 63-53 63 53m-125-65-48 66m173-66 48 66" stroke="#40c9b6" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+              <path d="M100 393c90-24 148-8 190 24m370-211c-57-15-96-5-123 20" stroke="#1aa895" stroke-opacity=".3" stroke-width="1.5"/>
+              <circle cx="130" cy="150" r="3" fill="#51f0cb"/><circle cx="640" cy="342" r="4" fill="#f7788d"/><circle cx="568" cy="109" r="3" fill="#58d7ff"/>
+            </svg>
+            <div class="hero-float float-detect"><span class="float-icon coral">♥</span><span>Detect<br /><b>abnormal values</b></span></div>
+            <div class="hero-float float-explain"><span class="float-icon blue">▤</span><span>Explain in<br /><b>simple language</b></span></div>
+            <div class="hero-float float-insight"><span class="float-icon gold">✦</span><span>Personalized<br /><b>health suggestions</b></span></div>
+          </div>
+          <div class="hero-decoration decoration-one" aria-hidden="true"></div>
+          <div class="hero-decoration decoration-two" aria-hidden="true"></div>
+        </section>
+
+        <section class="trust-strip" aria-label="Product principles">
+          <div class="trust-strip-inner">
+            <div><span class="trust-icon trust-teal">♧</span><span><b>Secure &amp; private</b><small>Reports are not stored on disk</small></span></div>
+            <div><span class="trust-icon trust-blue">ϟ</span><span><b>Clear explanations</b><small>Everyday language, no jargon</small></span></div>
+            <div><span class="trust-icon trust-orange">▤</span><span><b>Grounded in your report</b><small>Results use printed ranges</small></span></div>
+            <div><span class="trust-icon trust-purple">◎</span><span><b>Helpful next steps</b><small>Questions for your care team</small></span></div>
+          </div>
+        </section>
+
+        <section class="home-grid section-wrap" aria-label="Report workspace">
+          <section class="upload-card" id="upload" aria-labelledby="upload-title">
+            <div class="upload-card-head">
+              <div>
+                <div class="step-label"><span>01</span> · REPORT ANALYSIS</div>
+                <h2 id="upload-title">Start with your report</h2>
+                <p>Your results are easier to understand than you think.</p>
+              </div>
+              <div class="file-badge" aria-hidden="true">
+                <svg viewBox="0 0 32 36" fill="none"><path d="M7 2h12l8 8v22a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" fill="#eef6f4" stroke="#8ba9a4" stroke-width="1.5"/><path d="M19 2v8h8M10 17h12M10 21h12M10 25h8" stroke="#258f7c" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+            <label class="drop-zone" id="drop-zone" for="pdf-input" tabindex="0">
+              <input id="pdf-input" type="file" accept="application/pdf,.pdf" hidden />
+              <span class="upload-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15.5v3A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5v-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <strong>Drop your PDF here</strong>
+              <span class="drop-support">or <span class="browse-link">browse files</span> on your device</span>
+              <span class="file-limit">PDF only <b>·</b> up to 15 MB</span>
+            </label>
+            <div class="selected-file" id="selected-file" hidden>
+              <span class="selected-file-icon">PDF</span>
+              <span class="selected-file-copy"><strong id="file-name"></strong><small id="file-size"></small></span>
+              <button class="icon-button remove-file" id="remove-file" type="button" aria-label="Remove selected file">×</button>
+            </div>
+            <div class="upload-progress" id="upload-progress" hidden aria-live="polite">
+              <div class="progress-label"><span id="progress-message">Preparing your report…</span><span id="progress-number">0%</span></div>
+              <div class="progress-track"><span id="progress-fill"></span></div>
+              <div class="progress-foot">Your report is processed securely in memory.</div>
+            </div>
+            <button class="primary-button analyze-button" id="analyze-button" type="button" disabled>
+              <span>Analyze my report</span><span class="button-arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="upload-security"><span aria-hidden="true">◈</span> Encrypted in transit <i></i> Not stored on disk</div>
+            <p class="setup-hint" id="setup-hint" hidden>Gemini is not configured yet. Add your API key to the server’s <code>.env</code> file to analyze reports.</p>
+            <p class="upload-error" id="upload-error" role="alert" hidden></p>
+          </section>
+          <section class="preview-card sample-preview" aria-labelledby="preview-title">
+            <div class="preview-card-title"><span class="preview-step">2</span><div><h2 id="preview-title">AI analysis</h2><p>What your report will show</p></div><span class="preview-badge">PREVIEW</span></div>
+            <div class="preview-list"><div><span>Test name</span><span>Value</span><span>Status</span></div><div><b>Blood test values</b><span>From your PDF</span><span class="preview-state">● Explained</span></div><div><b>Reference ranges</b><span>From your PDF</span><span class="preview-state">● Compared</span></div><div><b>Plain-language notes</b><span>Report-based</span><span class="preview-state">● Included</span></div></div>
+            <p class="preview-note">Your own results appear here after analysis. This preview contains no sample medical values.</p>
+          </section>
+          <section class="preview-card insight-preview" id="health-insights-preview" aria-labelledby="insights-preview-title">
+            <div class="preview-card-title"><span class="preview-step insight-step">3</span><div><h2 id="insights-preview-title">Key insights</h2><p>Personalized to your report</p></div></div>
+            <div class="empty-insights"><span aria-hidden="true">✦</span><strong>Insights appear after analysis</strong><p>Upload a blood report to see which values may need attention and what to discuss with your clinician.</p></div>
+          </section>
+        </section>
+
+        <section class="how-section section-wrap" id="how-it-works">
+          <div class="section-heading">
+            <div class="section-kicker">A SIMPLE WAY TO GET CLARITY</div>
+            <h2>From report to understanding.</h2>
+            <p>Three thoughtful steps put your results into context.</p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card"><span class="step-number">01</span><div class="step-illustration upload-illustration"><span>PDF</span><i>↑</i></div><h3>Upload your blood report</h3><p>Add a PDF from your device. Your file is sent securely for analysis and is not saved by this app.</p></article>
+            <article class="step-card"><span class="step-number">02</span><div class="step-illustration scan-illustration"><span class="scan-line"></span><i>⌕</i></div><h3>We make sense of the results</h3><p>AI finds the values and ranges printed in your report, then explains them in everyday language.</p></article>
+            <article class="step-card"><span class="step-number">03</span><div class="step-illustration insight-illustration"><i>↗</i><span>Clearer next steps</span></div><h3>See what to ask next</h3><p>Explore important findings, understand what is missing, and prepare questions for your clinician.</p></article>
+          </div>
+        </section>
+
+        <section class="safety-band" id="safety">
+          <div class="safety-inner">
+            <div class="safety-symbol">✳</div>
+            <div><div class="section-kicker">A NOTE ON YOUR CARE</div><h2>Helpful context. Human care.</h2><p>This tool is for educational and informational purposes only. It does not provide a medical diagnosis or replace professional medical advice. Please consult a qualified healthcare professional for interpretation of your results and medical decisions.</p></div>
+          </div>
+        </section>
+
+        <section class="dashboard section-wrap" id="dashboard" hidden aria-labelledby="dashboard-title">
+          <div class="dashboard-topline"><div class="breadcrumb"><a href="#top">Home</a><span>/</span><b>Report insights</b></div><button class="secondary-button" id="new-report-button" type="button"><span aria-hidden="true">＋</span> Analyze another report</button></div>
+          <div class="dashboard-heading"><div><div class="section-kicker">YOUR PERSONAL REPORT OVERVIEW</div><h2 id="dashboard-title">Your results, in perspective.</h2><p id="report-meta">Analysis complete</p></div><div class="review-status" id="review-status"><span class="status-dot"></span><span id="status-text">Report reviewed</span></div></div>
+
+          <div class="overview-grid">
+            <article class="overview-card summary-card">
+              <div class="card-topline"><div class="card-eyebrow">REPORT OVERVIEW</div><span class="date-chip" id="report-date">DATE UNAVAILABLE</span></div>
+              <p class="summary-copy" id="summary-copy"></p>
+              <div class="missing-data-note" id="missing-data-note"></div>
+              <div class="summary-patient" id="patient-info"></div>
+              <div class="summary-footer"><span class="summary-sparkle">✳</span><span>AI-generated summary based on the values shown in your report.</span></div>
+            </article>
+            <article class="overview-card distribution-card">
+              <div class="card-eyebrow">AT A GLANCE</div>
+              <div class="distribution-layout"><div class="donut-wrap"><div class="donut-chart" id="donut-chart"><div class="donut-center"><strong id="test-count">0</strong><small>tests</small></div></div></div><div class="distribution-legend" id="distribution-legend"></div></div>
+              <p class="chart-note">Based on the report’s stated reference ranges.</p>
+            </article>
+          </div>
+
+          <section class="dashboard-section findings-section" id="health-insights-results" aria-labelledby="findings-title">
+            <div class="section-title-row"><div><div class="section-kicker">WHAT STOOD OUT</div><h3 id="findings-title">Abnormal results &amp; key findings</h3></div><span class="section-count" id="finding-count">0 findings</span></div>
+            <div class="findings-grid" id="findings-grid"></div>
+          </section>
+
+          <section class="dashboard-section ai-explanation-section" aria-labelledby="ai-explanation-title">
+            <div class="section-title-row"><div><div class="section-kicker">IN PLAIN LANGUAGE</div><h3 id="ai-explanation-title">AI explanation</h3></div></div>
+            <div class="ai-explanation-list" id="ai-explanation-list"></div>
+          </section>
+
+          <section class="dashboard-section risk-section" aria-labelledby="risk-title">
+            <div class="section-title-row"><div><div class="section-kicker">SCREENING, WITH CARE</div><h3 id="risk-title">Health risk overview</h3></div><span class="info-note"><span>i</span> Model-based risk is shown only with sufficient data</span></div>
+            <div class="risk-grid" id="risk-grid"></div>
+            <p class="risk-footnote">These screening estimates cannot diagnose a condition. A clinician should interpret results alongside your health history.</p>
+          </section>
+
+          <section class="dashboard-section results-section" aria-labelledby="results-title">
+            <div class="section-title-row"><div><div class="section-kicker">EVERY VALUE, EXPLAINED</div><h3 id="results-title">Detailed test results</h3></div><div class="filter-tabs" role="group" aria-label="Filter test results"><button class="filter-tab active" data-filter="all" type="button">All <span id="all-count">0</span></button><button class="filter-tab" data-filter="attention" type="button">Needs attention <span id="attention-count">0</span></button></div></div>
+            <div class="test-list" id="test-list"></div>
+            <p class="empty-results" id="empty-results" hidden>No blood-test values could be read from this report. Check that the PDF is legible and try again.</p>
+          </section>
+
+          <div class="lower-grid">
+            <section class="dashboard-section suggestions-section" aria-labelledby="suggestions-title"><div class="section-kicker">GENTLE NEXT STEPS</div><h3 id="suggestions-title">General suggestions</h3><p class="section-subcopy">Everyday ideas to discuss with your care team.</p><ul class="suggestion-list" id="suggestion-list"></ul><div class="suggestion-note"><span>✳</span> These are general suggestions, not a personal treatment plan.</div></section>
+            <section class="dashboard-section questions-section" aria-labelledby="questions-title"><div class="section-kicker">PREPARE FOR YOUR NEXT VISIT</div><h3 id="questions-title">Questions for your doctor</h3><ul class="question-list" id="question-list"></ul></section>
+          </div>
+
+          <section class="chat-section" aria-labelledby="chat-title">
+            <div class="chat-intro"><div class="chat-orb" aria-hidden="true">✳</div><div><div class="section-kicker">YOUR REPORT, EXPLAINED</div><h3 id="chat-title">Ask HealthLens AI</h3><p>Ask a question about the results in this report.</p></div><div class="chat-lock">◈ Report-based answers</div></div>
+            <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="chat-message assistant-message"><span class="message-avatar">✳</span><p>I can help explain the values in your report. What would you like to understand?</p></div></div>
+            <div class="quick-prompts" id="quick-prompts"><button type="button" data-chat-prompt="Explain my report in simple terms.">Explain my report</button><button type="button" data-chat-prompt="Which values are outside their reference ranges?">Which values need attention?</button><button type="button" data-chat-prompt="What should I discuss with my doctor?">Questions for my doctor</button></div>
+            <form class="chat-form" id="chat-form"><label class="sr-only" for="chat-input">Ask a question about your report</label><input id="chat-input" type="text" placeholder="Ask about a result in your report…" maxlength="1200" autocomplete="off" /><button type="submit" aria-label="Send question"><span>Send</span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></form>
+            <div class="chat-disclaimer">HealthLens AI can make mistakes. For health decisions, speak with a qualified healthcare professional.</div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="13" fill="currentColor"/><path d="M8 20h6l3.1-7 5.4 14 3.3-7H32" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-name">HealthLens <span>AI</span></span></a><p>Making health information easier to understand.</p><span class="footer-disclaimer">For information only · Not a medical diagnosis</span></footer>
+      </div>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

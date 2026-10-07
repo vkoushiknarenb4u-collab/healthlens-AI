@@ -1,0 +1,8 @@
+node_modules/
+.env
+ml/models/
+ml/data/
+ml/.python-packages/
+__pycache__/
+*.py[cod]
+.DS_Store
